@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="container">
+      <div class="message-state">
+        <h1> <img src="assets/images/icon-success-check.svg" alt=""> Message Sent!</h1>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+      <div class="contact-form">
+        <h1> Contact Us</h1>
+        <form action="">
+          <div class="twoinput">
+            <div class="first">
+              <label for="">First name : <span>*</span></label>
+              <input type="text" class="firstname">
+              <span class="error"></span>
+            </div>
+            <div class="last">
+              <label for="">Last name : <span>*</span></label>
+              <input type="text" class="lastname">
+              <span class="error"></span>
+            </div>
+          </div>
+          <div class="Email">
+            <label for="">  Email Address : <span>*</span></label>
+            <input type="email" class="address">
+            <span class="error"></span>
+          </div>
+          <div class="radio_button">
+          <label for="">  Query Type : <span>*</span></label>
+          <div class="twoinput">
+            <div class="general">
+              <label class="general-radio"> 
+                <input type="Radio" name="type" class="general-radio-input" value="general entry">
+                <span class="custom-radio"></span>
+                General Enquiry</label>
+            </div>
+            
+            <div class="support">
+               <label class="support-radio">
+              <input type="radio" name="type" class="support-radio-input" value="support request">
+              <span class="custom-radio"></span>
+               Support Request
+              </label>
+            </div>
+          </div>
+              <span class="error"></span>
+          </div>
+          <div class="message">
+            <label for="">Message : <span>*</span></label>
+            <textarea name="" class="subject"></textarea>
+            <span class="error"></span>
+          </div>
+          <div class="check">
+            <div class="labelcheck">
+              <label class="labelcheck">
+                <input type="checkbox" class="check-input">
+                <span class="custom-checkbox"></span>
+                please consent to being contacted Submit Message Sent! </label>
+          </div>
+            <span class="error"></span>
+          </div>
+          <button class="class">Submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Youcef laala</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

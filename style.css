@@ -1,0 +1,327 @@
+/* start variable  */
+:root{
+    --Green-200-lighter: hsl(148, 38%, 91%);
+--Green-600-medium: hsl(169, 82%, 27%);
+--Red: hsl(0, 66%, 54%);
+--White: hsl(0, 0%, 100%);
+--Grey-500-medium: hsl(186, 15%, 59%);
+--Grey-900-darker: hsl(187, 24%, 22%);
+}
+   /* Start Global Rules */
+   * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+   }
+  body {
+   margin: 0;
+   padding: 0;
+
+    position: relative;
+ 
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End Global Rules */
+  @font-face {
+    font-family:"Karla-Bold.ttf" ;
+    src: url(assets/fonts/static/Karla-Bold.ttf);
+  }
+  @font-face {
+    font-family: "Karla-Regular";
+    src: url(assets/fonts/static/Karla-Regular.ttf);
+  }
+  .page{
+min-height: 100vh;
+background-color: var(--Green-200-lighter);
+  }
+  .page .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-form{
+    background: var(--White);
+    padding: 20px;
+    border-radius: 12px;
+  }
+  h1{
+    color: var(--Green-600-medium);
+    font-weight: 700;
+    font-family:"Karla-Bold.ttf" ;
+  }
+    .contact-form form{
+    display: flex;
+    flex-direction: column;
+  }
+  /* sstart name  */
+  .twoinput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .twoinput .first,.twoinput .last{
+    display: flex;
+    flex-direction: column;
+  }
+  .twoinput .first label,.twoinput .last label{
+    margin-bottom: 10px;
+  }
+  .twoinput .first input,.twoinput .last input{
+    padding: 10px;
+    width: 250px;
+    border: 1px solid var(--Grey-900-darker);
+    border-radius: 2px;
+    outline: none  }
+    /* start  email  */
+.Email{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.Email input{
+    padding: 10px;
+    border: 1px solid var(--Grey-900-darker);
+    border-radius: 2px;
+    outline: none ;
+    width: 520px; 
+    max-width: 100%;
+}
+
+/* start customaize all label  */
+.page .container label{
+    margin-bottom: 10px;
+font-weight: 400;
+color: var(--Grey-900-darker);
+font-family: "Karla-Regular";
+}
+
+/*  start radio input */
+.radio_button{
+    margin-top: 10px;
+}
+
+  .twoinput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .twoinput .general, .twoinput .support{
+    border: 1px solid var(--Grey-900-darker);
+    border-radius: 2px;
+    padding: 10px;
+    
+  }
+  .twoinput .general label,.twoinput .support label{
+    margin-bottom: 10px;
+  }
+.support{
+    display: flex;
+
+ }
+ .support label{
+    margin: 0 !important;
+ }
+
+ .custom-radio {
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+/* Hide the actual checkbox */
+.support-radio-input {
+    display: none;
+}
+
+/* Apply the background image to the custom checkbox when the checkbox is checked */
+.support-radio-input:checked + .custom-radio {
+    background-image: url('assets/images/icon-radio-selected.svg');
+}
+
+  .twoinput .general input,.twoinput .support input{
+    border: 1px solid var(--Grey-900-darker);
+    outline: none 
+ }
+ .general{
+    display: flex;
+
+ }
+ .general label{
+    margin: 0 !important;
+ }
+
+ .custom-radio {
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+/* Hide the actual checkbox */
+.general-radio-input {
+    display: none;
+}
+
+/* Apply the background image to the custom checkbox when the checkbox is checked */
+.general-radio-input:checked + .general-radio {
+    background-image: url('assets/images/icon-radio-selected.svg');
+}
+
+ /* start message  */
+ .message{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+ }
+ .message textarea{
+    padding: 10px;
+    border: 1px solid var(--Grey-900-darker);
+    border-radius: 2px;
+    outline: none ;
+    width: 520px; 
+    max-width: 100%;
+    resize: none;
+    height: 50px;
+ }
+
+
+ /* start check  */
+ .check{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+ }
+ .labelcheck{
+    display: flex;
+
+ }
+ .labelcheck label{
+    margin: 0 !important;
+ }
+
+ .custom-checkbox {
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* Hide the actual checkbox */
+.check-input {
+    display: none;
+}
+
+/* Apply the background image to the custom checkbox when the checkbox is checked */
+.check-input:checked + .custom-checkbox {
+    background-image: url('assets/images/icon-checkbox-check.svg');
+}
+
+
+ /* start button  */
+ button{
+    background-color: var(--Green-600-medium);
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: var(--White);
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-family: "Karla-Regular";
+    font-weight: 400;
+ }
+ .message-state{
+    background-color: var(--Grey-900-darker);
+    padding: 20px;
+   margin:0;
+    position: absolute;
+    top: 20px;
+    display: none;
+ }
+ .message-state >h1{
+    color: var(--White);
+    margin: 0;
+ }
+ .message-state p{
+  color: var(--White);
+  font-weight: 18px;
+ }
+ @media (max-width:550px) {
+    .twoinput{
+        display: flex;
+     flex-direction: column;
+      }
+      .twoinput .first input,.twoinput .last input{
+        width: 450px;
+        max-width: 100%;
+      }
+      .message textarea{
+        width: 450px;
+        max-width: 100%;
+        height: 150px;
+      }
+      .Email input{
+        width: 450px;
+        max-width: 100%;
+      }
+      .twoinput .general{
+        margin-bottom: 10px;
+      }
+      .twoinput .general, .twoinput .support{
+    width: 450px;
+    max-width: 100%;
+        
+      }
+ }
