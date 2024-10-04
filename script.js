@@ -3,8 +3,8 @@
 const firstname=document.querySelector(".firstname");
 const lastname=document.querySelector(".lastname");
 const email=document.querySelector(".address");
-const general=document.querySelector(".general-radio");
-const support=document.querySelector(".support-radio");
+const general=document.querySelector(".general-radio-input");
+const support=document.querySelector(".support-radio-input");
 const message=document.querySelector(".subject");
 const check=document.querySelector(".check-input");
 const error=document.querySelectorAll(".error");

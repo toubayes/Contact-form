@@ -208,7 +208,7 @@ font-family: "Karla-Regular";
 }
 
 /* Apply the background image to the custom checkbox when the checkbox is checked */
-.general-radio-input:checked + .general-radio {
+.general-radio-input:checked + .custom-radio {
     background-image: url('assets/images/icon-radio-selected.svg');
 }
 
